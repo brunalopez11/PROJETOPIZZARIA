@@ -21,5 +21,4 @@ Projeto criado por **Bruna Lopez Pinheiro**, **Ana Luiza Muniz** e **Thais Ferre
 - **Express**  
 - **JavaScript**  
 - **HTML5 e CSS3**  
-- (adicione aqui o banco de dados ou frameworks extras que utilizaram)
 
