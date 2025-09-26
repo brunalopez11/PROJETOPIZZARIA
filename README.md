@@ -1,5 +1,10 @@
 # Projeto Pizzaria (Composite + Decorator)
 
+## Desenvolvido por:
+- Bruna Lopez  
+- Ana Luiza  
+- Thais Ferreira 
+
 ##  Sobre  
 Sistema simples de pizzaria usando **Node.js (Express)** com padrões GoF:  
 - **Composite** → estrutura de itens do pedido (Produto, ConjuntoDeItens).  
