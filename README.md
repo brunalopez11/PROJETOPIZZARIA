@@ -16,9 +16,16 @@ Projeto criado por **Bruna Lopez Pinheiro**, **Ana Luiza Muniz** e **Thais Ferre
 
 ---
 
-## 🛠️ Tecnologias utilizadas
-- **Node.js**  
-- **Express**  
-- **JavaScript**  
-- **HTML5 e CSS3**  
+## 🛠️ Tecnologias utilizadas no projeto
 
+- JavaScript (ES6+) → Linguagem principal usada na implementação.
+
+- Node.js → Ambiente de execução do JavaScript (para rodar os arquivos .js no terminal).
+
+- Padrões de Projeto GoF:
+
+- Composite → Estrutura hierárquica para montar pizzas, combos e adicionais de forma flexível.
+
+- Decorator → Permite adicionar notificações extras (e-mail, SMS, WhatsApp) de forma dinâmica e encadeada.
+
+- Paradigma de Programação Orientada a Objetos (POO) → Uso de classes, herança e interfaces simuladas via contratos de métodos.
