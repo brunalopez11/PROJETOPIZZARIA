@@ -62,3 +62,38 @@ if (window.location.pathname.includes("pedido.html")) {
       `;
     });
 }
+
+document.addEventListener("DOMContentLoaded", async () => {
+  const resumoBox = document.getElementById("resumo");
+
+  try {
+    const response = await fetch("/resumo-pedido");
+
+    if (!response.ok) {
+      throw new Error("Erro na resposta do servidor");
+    }
+
+    const data = await response.json();
+
+    if (!data.resumo) {
+      resumoBox.innerHTML = `
+        <div class="alert alert-warning">
+          Nenhum pedido foi feito ainda. Volte ao cardápio e escolha sua pizza 🍕
+        </div>
+      `;
+      return;
+    }
+
+    resumoBox.innerHTML = `
+      <pre>${data.resumo}</pre>
+      <p><strong>Total:</strong> R$ ${data.total.toFixed(2)}</p>
+    `;
+  } catch (error) {
+    resumoBox.innerHTML = `
+      <div class="alert alert-danger">
+        Erro ao carregar o pedido. Verifique se o servidor está rodando.
+      </div>
+    `;
+    console.error(error);
+  }
+});

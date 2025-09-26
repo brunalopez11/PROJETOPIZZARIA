@@ -2,12 +2,37 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Resumo do Pedido</title>
+  <title>Resumo do Pedido - Pizzaria Delícia</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Resumo do Pedido</h1>
-  <div id="resumo"></div>
+  <header class="header">
+    <div class="container">
+      <h1 class="logo">Pizzaria Delícia</h1>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="cardapio.html">Cardápio</a>
+        <a href="pedido.html">Resumo</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="resumo section">
+    <div class="container">
+      <h2>Resumo do Pedido</h2>
+      <div id="resumo" class="resumo-box">
+      </div>
+      <div class="resumo-actions">
+        <a href="cardapio.html" class="btn btn-outline">Voltar ao Cardápio</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Pizzaria Delícia. Todos os direitos reservados.</p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

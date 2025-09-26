@@ -1,26 +1,155 @@
-/* Define a fonte e o espaçamento geral da página */
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
-  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+  line-height: 1.6;
 }
 
-/* Cor e estilo do título */
-h1 {
-  color: #d62828;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Margem para o formulário */
-form {
-  margin-top: 20px;
+.container {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* Estilo para o botão */
-button {
-  margin-top: 15px;
-  padding: 10px;
+/* Header */
+.header {
   background: #d62828;
-  color: #fff;
+  color: white;
+  padding: 15px 0;
+}
+
+.header .logo {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+.header nav {
+  float: right;
+  margin-right: 20px;
+}
+
+.header nav a {
+  margin-left: 15px;
+  font-size: 1.1rem;
+  color: white;
+}
+
+.header:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Hero / Banner */
+.hero {
+  background: url('assets/napolilainen-pizza-pizzauuni.jpg.crdownload') center / cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #d62828;
+  color: white;
+  padding: 12px 25px;
+  font-size: 1.2rem;
   border: none;
+  border-radius: 4px;
   cursor: pointer;
+}
+
+.btn:hover {
+  background: #b52323;
+}
+
+/* Seções comuns */
+.section {
+  padding: 60px 0;
+}
+
+/* Cardápio */
+.pedido-form .form-group {
+  margin-bottom: 20px;
+}
+
+.pedido-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.pedido-form select, 
+.pedido-form input[type="radio"], 
+.pedido-form input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+.radio-group label, .checkbox-group label {
+  margin-right: 20px;
+}
+
+.resumo-box {
+  background: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.resumo-box p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.resumo-actions {
+  margin-top: 20px;
+  text-align: right;
+}
+
+.btn-outline {
+  background: transparent;
+  color: #d62828;
+  border: 2px solid #d62828;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+}
+
+.btn-outline:hover {
+  background: #d62828;
+  color: white;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #eee;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 0.9rem;
 }
