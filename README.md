@@ -1,6 +1,6 @@
-# 🍕 Projeto Pizzaria (Composite + Decorator)
+# Projeto Pizzaria (Composite + Decorator)
 
-## 📌 Sobre  
+##  Sobre  
 Sistema simples de pizzaria usando **Node.js (Express)** com padrões GoF:  
 - **Composite** → estrutura de itens do pedido (Produto, ConjuntoDeItens).  
 - **Decorator** → notificadores (Email → SMS → WhatsApp).  
@@ -12,7 +12,7 @@ Front-end em **HTML/CSS/JS** com 3 páginas:
 
 ---
 
-## 🚀 Como rodar  
+## Como rodar  
 1. Instale dependências:
 ```bash
 
